@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -10,23 +13,52 @@
 </head>
 <body>
 <main>
-  Reliable, efficient delivery
-  Powered by Technology
-
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
-
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
+  <div class="container">
+    <div class="title">
+      <p class="p1">Reliable, efficient delivery</p>
+      <p class="p2">Powered by Technology</p>
+      <p class="p3">Our Artificial Intelligence powered tools use millions of project data points 
+      to ensure that your project is successful</p>
+    </div>
+    <div class="main-container">
+      <div class="supervisor block">
+        <div class="wrapper">
+          <p class="block-title">Supervisor</p>
+          <p class="block-descr">Monitors activity to identify project roadblocks</p>
+          <div class="block-img">
+            <img src="images\icon-supervisor.svg" alt="supervisor" width="64px" height="64px">
+          </div>
+        </div>
+      </div>
+      <div class="teambuilder block">
+        <div class="wrapper">
+          <p class="block-title">Team Builder</p>
+          <p class="block-descr">Scans our talent network to create the optimal team for your project</p>
+          <div class="block-img">
+            <img src="images\icon-team-builder.svg" alt="teambuilder" width="64px" height="64px">
+          </div>
+        </div>
+      </div>
+      <div class="karma block">
+        <div class="wrapper">
+          <p class="block-title">Karma</p>
+          <p class="block-descr">Regularly evaluates our talent to ensure quality</p>
+          <div class="block-img">
+            <img src="images\icon-karma.svg" alt="karma" width="64px" height="64px">
+          </div>
+        </div>
+      </div>
+      <div class="calculator block">
+        <div class="wrapper">
+          <p class="block-title">Calculator</p>
+          <p class="block-descr">Uses data from past projects to provide better delivery estimates</p>
+          <div class="block-img">
+            <img src="images\icon-calculator.svg" alt="calculator" width="64px" height="64px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 </body>
 </html>
