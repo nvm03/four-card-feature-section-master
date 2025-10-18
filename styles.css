@@ -12,7 +12,7 @@ body{
     justify-content: center;
     font-family: Poppins, sans-serif;   
 }
-.container{
+.main-container, .title{
     width: 314px;
 }
 .title{
@@ -42,6 +42,7 @@ p{
     border-top: 4px solid var(--cyan);  
 }
 .block{
+    width: 314px;
     height: 250px;
     box-shadow: 0 5px 15px -5px var(--grey400);
     border-radius: 0.25rem;
@@ -82,12 +83,82 @@ p{
     margin-top: 12px;
 }
 
-@media(min-width: 48em){
-    .container{
-    width: 1500px;
+@media (min-width: 48em) and (max-width: 63.9375em){
+    .main-container, .title{
+        width: 660px;
+        margin-top: 32px;
     }
     .main-container{
         display: grid;
-        grid-template-columns: 0.5fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr 1fr 1fr;
+        gap:32px;
+    }
+    .block:not(:first-child){
+        margin-top: 0;
+    }
+    .supervisor{
+        margin-top: 0;
+        grid-column: 1;
+        grid-row: 2;
+        
+    }
+    .teambuilder{
+        grid-column: 1/ span 2;
+        grid-row: 1;  
+        justify-self: center;
+    }
+    .karma{
+       grid-column: 2;
+        grid-row: 2;
+       
+    }
+    .calculator{
+        grid-column: 1/ span 2;
+        grid-row: 3; 
+        justify-self: center;
+    }
+}
+
+
+@media (min-width: 64em){
+    .main-container, .title{
+        width: 1114px;
+        margin-top: 32px;
+    }
+    .main-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 540px;
+        gap:32px;
+    }
+    .block:not(:first-child){
+        margin-top: 0;
+    }
+    .block{
+        width: 350px;
+    }
+    .wrapper{
+        width: 286px;
+        justify-self: center;
+        padding: 32px;
+    }
+    .supervisor{
+        margin-top: 0;
+        grid-column: 1;
+        align-self: center;
+    }
+    .teambuilder{
+        grid-column: 2;
+        grid-row: 1;  
+    }
+    .karma{
+       grid-column: 2;
+       grid-row: 1;  
+       align-self: end;
+    }
+    .calculator{
+        grid-column: 3;
+        align-self: center; 
     }
 }
