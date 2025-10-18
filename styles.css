@@ -13,7 +13,7 @@ body{
     font-family: Poppins, sans-serif;   
 }
 .main-container, .title{
-    width: 314px;
+    max-width: 314px;
 }
 .title{
     text-align: center;
@@ -42,14 +42,14 @@ p{
     border-top: 4px solid var(--cyan);  
 }
 .block{
-    width: 314px;
-    height: 250px;
+    max-width: 314px;
+    max-height: 250px;
     box-shadow: 0 5px 15px -5px var(--grey400);
     border-radius: 0.25rem;
 }
 .wrapper{
-    width: 250px;
-    height: 186px;
+    max-width: 250px;
+    max-height: 186px;
     padding: 32px;
     display: flex;
     flex-direction: column;
@@ -83,9 +83,9 @@ p{
     margin-top: 12px;
 }
 
-@media (min-width: 48em) and (max-width: 63.9375em){
+@media (min-width: 48em) and (max-width: 83.125em){
     .main-container, .title{
-        width: 660px;
+        max-width: 41.25rem;
         margin-top: 32px;
     }
     .main-container{
@@ -120,10 +120,9 @@ p{
     }
 }
 
-
-@media (min-width: 64em){
+@media (min-width: 83.125em){
     .main-container, .title{
-        width: 1114px;
+        max-width: 69.625rem;
         margin-top: 32px;
     }
     .main-container{
@@ -136,10 +135,10 @@ p{
         margin-top: 0;
     }
     .block{
-        width: 350px;
+        max-width: 350px;
     }
     .wrapper{
-        width: 286px;
+        max-width: 286px;
         justify-self: center;
         padding: 32px;
     }
